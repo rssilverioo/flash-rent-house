@@ -1,12 +1,6 @@
 'use client';
 
-import axios from 'axios';
-import { useCallback, useEffect, useMemo, useState } from 'react';
-import { toast } from 'react-hot-toast';
-import { useRouter } from 'next/navigation';
-import { differenceInDays, eachDayOfInterval } from 'date-fns';
 
-import useLoginModal from '@/app/hooks/useLoginModal';
 
 import Container from '@/app/components/Container';
 import { categories } from '@/app/components/navbar/Categories';
@@ -14,13 +8,9 @@ import ListingHead from '@/app/components/listings/ListingHead';
 import { SafeListings, SafeUser } from '@/app/types';
 import { Reservation } from '@prisma/client';
 import ListingInfo from '@/app/components/listings/ListingInfo';
+import { useMemo } from 'react';
 
 
-const initialDateRange = {
-	startDate: new Date(),
-	endDate: new Date(),
-	key: 'selection'
-};
 
 interface ListingClientProps {
   reservations?: Reservation[];
