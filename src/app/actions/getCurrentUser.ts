@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { getServerSession } from 'next-auth/next';
 
 import { authOptions } from '@/pages/api/auth/[...nextauth]';

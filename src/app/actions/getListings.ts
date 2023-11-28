@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import prisma from '@/app/libs/prismadb';
 
 export interface IListingsParams {
