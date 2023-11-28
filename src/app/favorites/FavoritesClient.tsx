@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { SafeListing, SafeUser } from '@/app/types';
 
 import Heading from '@/app/components/Heading';

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
 
@@ -8,7 +9,7 @@ import {	TbPhotoPlus } from 'react-icons/tb';
 
 declare global {
 	// eslint-disable-next-line no-var
-	var cloudinary = any;
+	var cloudinary: any;
 }
 
 
