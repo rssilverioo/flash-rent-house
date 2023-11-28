@@ -18,8 +18,8 @@ const Logo = () => {
 			onClick={onBack}
 			alt="logo"
 			className='hidden md:block cursor-pointer'
-			height='100'
-			width='100'
+			height='70'
+			width='51'
 			src={logo}
 
 		/>
