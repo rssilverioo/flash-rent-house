@@ -20,7 +20,7 @@ const HeartButton: React.FC<HeartButtonProps> = ({
 	return (
 		<div onClick={toggleFavorite} className='reletive hover:opacity-80 transition cursor-pointer'>
 			<AiOutlineHeart size={28} className="fill-white absolute -top-[2px] -right-[2px]"/>
-			<AiFillHeart size={24} className={hasFavorited ? 'fill-blue-gray-900' : 'fill-neutral-500/70'}/>
+			<AiFillHeart size={24} className={hasFavorited ? 'fill-blue-950' : 'fill-neutral-500/70'}/>
 		</div>
 	);
 };
