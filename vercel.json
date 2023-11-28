@@ -1,0 +1,12 @@
+{
+  "builds": [
+    { "src": "vercel/path0/api/**/*.js", "use": "@vercel/node" },
+    { "src": "vercel/path0/**", "use": "@vercel/node" }
+  ],
+  "version": 2,
+  "build": {
+    "scripts": {
+      "build": "prisma generate && next build"
+    }
+  }
+}
