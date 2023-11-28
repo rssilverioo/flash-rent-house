@@ -219,7 +219,7 @@ const RentModal = () => {
 				/>
 				<Input
 					id='title'
-					label='Title'
+					label='Titulo da sua casa'
 					disabled={isLoading}
 					register={register}
 					errors={errors}
@@ -229,7 +229,7 @@ const RentModal = () => {
 
 				<Input
 					id='description'
-					label='Description'
+					label='Descricao da sua casa'
 					disabled={isLoading}
 					register={register}
 					errors={errors}
