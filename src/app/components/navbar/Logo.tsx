@@ -9,8 +9,14 @@ const Logo = () => {
 	const router = useRouter();
 
 
+	const onBack = () => {
+		router.push('/');
+		console.log('entrando');
+	};
+
 	return (
 		<Image
+			onClick={onBack}
 			alt="logo"
 			className='hidden md:block cursor-pointer'
 			height='100'

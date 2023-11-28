@@ -1,40 +1,36 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-
-
 import prisma from '@/app/libs/prismadb';
 
 interface IParams {
-	listingId?: string;
-	userId?: string;
-	authorId?: string
+  listingId?: string;
+  userId?: string;
+  authorId?: string;
 }
 
 export default async function getReservations(
 	params: IParams
 ) {
 	try {
-
-
-		const {		listingId, userId, authorId} = params;
+		const { listingId, userId, authorId } = params;
 
 		const query: any = {};
 
-		if(listingId) {
+		if (listingId) {
 			query.listingId = listingId;
 		}
 
-		if(userId) {
+		if (userId) {
 			query.userId = userId;
 		}
 
-		if(authorId) {
-			query.authorId = authorId;
+		if (authorId) {
+			query.listing = { userId: authorId };
 		}
 
 		const reservations = await prisma.reservation.findMany({
 			where: query,
 			include: {
-				listing: true,
+				listing: true
 			},
 			orderBy: {
 				createdAt: 'desc'
@@ -50,9 +46,8 @@ export default async function getReservations(
 				listing: {
 					...reservation.listing,
 					createdAt: reservation.listing.createdAt.toISOString(),
-				}
+				},
 			}));
-
 
 		return safeReservations;
 	} catch (error: any) {
