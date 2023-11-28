@@ -23,7 +23,7 @@ const Search = () => {
 			return getByValue(locationValue as string)?.label;
 		}
 
-		return 'Anywhere';
+		return 'Lugar';
 	}, [locationValue, getByValue]);
 
 	const durationLabel = useMemo(() => {
@@ -36,18 +36,18 @@ const Search = () => {
 				diff = 1;
 			}
 
-			return `${diff} Days`;
+			return `${diff} Dias`;
 		}
 
-		return 'Any Week';
+		return 'Semana';
 	}, [startDate, endDate]);
 
 	const guestLabel = useMemo(() => {
 		if (guestCount) {
-			return `${guestCount} Guests`;
+			return `${guestCount} Hospedes`;
 		}
 
-		return 'Add Guests';
+		return 'Add Hospedes';
 	}, [guestCount]);
 
 	return (
@@ -112,7 +112,7 @@ const Search = () => {
 					<div
 						className="
               p-2
-              bg-rose-500
+              bg-green-300
               rounded-full
               text-white
             "
