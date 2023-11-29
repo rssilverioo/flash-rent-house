@@ -42,7 +42,7 @@ const ListingReservation: React.FC<
           R$ {price}
 				</div>
 				<div className="font-light text-neutral-600">
-          night
+          noite
 				</div>
 			</div>
 			<hr />
