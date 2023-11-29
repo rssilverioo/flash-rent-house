@@ -36,7 +36,11 @@ const Search = () => {
 				diff = 1;
 			}
 
-			return `${diff} Dias`;
+			return `${diff} Dia`;
+
+
+
+
 		}
 
 		return 'Semana';
