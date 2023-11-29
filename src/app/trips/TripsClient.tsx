@@ -43,7 +43,7 @@ const TripsClient: React.FC<TripsClientProps> = ({
 		<Container>
 			<Heading
 				title="Trips"
-				subtitle="Where you've been and where you're going"
+				subtitle="Onde você esteve e para onde está indo"
 			/>
 			<div
 				className="
@@ -66,7 +66,7 @@ const TripsClient: React.FC<TripsClientProps> = ({
 						actionId={reservation.id}
 						onAction={onCancel}
 						disabled={deletingId === reservation.id}
-						actionLabel="Cancel reservation"
+						actionLabel="Cancelar reserva"
 						currentUser={currentUser}
 					/>
 				))}
