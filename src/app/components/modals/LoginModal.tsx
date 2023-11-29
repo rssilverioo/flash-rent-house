@@ -18,6 +18,7 @@ import Input from '../inputs/input';
 import toast from 'react-hot-toast';
 import Button from '../Button';
 import { useRouter } from 'next/navigation';
+import { FaFacebook } from 'react-icons/fa';
 
 
 const LoginModal = () => {
@@ -102,15 +103,15 @@ const LoginModal = () => {
 			<hr />
 			<Button
 				outline
-				label='Continuar com Google'
+				label='Continue com Google'
 				icon={FcGoogle}
 				onClick={() => signIn('google')}
 			/>
 			<Button
 				outline
-				label='Continuar com Github'
-				icon={AiFillGithub}
-				onClick={() => signIn('github')}
+				label='Continue com Facebook'
+				icon={FaFacebook}
+				onClick={() => signIn('facebook')}
 			/>
 			<div className='text-neutral-500 text-center mt-4 font-light '>
 				<div className='justify-center flex flex-row items-center gap-2'>
