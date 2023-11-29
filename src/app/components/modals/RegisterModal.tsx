@@ -1,8 +1,9 @@
 'use client';
 
 import axios from 'axios';
-import { AiFillGithub,  } from 'react-icons/ai';
 import {	FcGoogle	} from 'react-icons/fc';
+import { AiFillGithub  } from 'react-icons/ai';
+import { FaFacebook } from 'react-icons/fa';
 
 import {	useCallback, useState	} from 'react';
 import {
@@ -19,7 +20,6 @@ import toast from 'react-hot-toast';
 import Button from '../Button';
 import { signIn } from 'next-auth/react';
 import useLoginModal from '@/app/hooks/useLoginModal';
-import { FaFacebook } from 'react-icons/fa';
 
 
 const RegisterModal = () => {
@@ -116,6 +116,12 @@ const RegisterModal = () => {
 				label='Continue com Facebook'
 				icon={FaFacebook}
 				onClick={() => signIn('facebook')}
+			/>
+			<Button
+				outline
+				label='Continue com Github'
+				icon={AiFillGithub}
+				onClick={() => signIn('github')}
 			/>
 			<div className=' text-neutral-500 text-center mt-4 font-light '>
 				<div className='justify-center flex flex-row items-center gap-2'>
