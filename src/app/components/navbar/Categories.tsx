@@ -23,79 +23,79 @@ import { usePathname, useSearchParams } from 'next/navigation';
 
 export const categories = [
 	{
-		label: 'Beach',
+		label: 'Praia',
 		icon: TbBeach,
-		description: 'This property is close to the beach!',
+		description: 'Este imóvel fica perto da praia!',
 	},
 	{
-		label: 'Windmills',
+		label: 'Moinhos de vento',
 		icon: GiWindmill,
-		description: 'This property is has windmills!',
+		description: 'Esta propriedade tem moinhos de vento!',
 	},
 	{
-		label: 'Modern',
+		label: 'Moderna',
 		icon: MdOutlineVilla,
-		description: 'This property is modern!'
+		description: 'Esta propriedade é moderna!'
 	},
 	{
-		label: 'Countryside',
+		label: 'Campo',
 		icon: TbMountain,
-		description: 'This property is in the countryside!'
+		description: 'Esta propriedade fica no campo!'
 	},
 	{
-		label: 'Pools',
+		label: 'Piscina',
 		icon: TbPool,
-		description: 'This is property has a beautiful pool!'
+		description: 'Esta propriedade tem uma bela piscina!'
 	},
 	{
-		label: 'Islands',
+		label: 'Ilha',
 		icon: GiIsland,
-		description: 'This property is on an island!'
+		description: 'Esta propriedade fica em uma ilha!'
 	},
 	{
-		label: 'Lake',
+		label: 'Lago',
 		icon: GiBoatFishing,
-		description: 'This property is near a lake!'
+		description: 'Esta propriedade fica perto de um lago!'
 	},
 	{
-		label: 'Skiing',
+		label: 'Esqui',
 		icon: FaSkiing,
-		description: 'This property has skiing activies!'
+		description: 'Esta propriedade oferece atividades de esqui!'
 	},
 	{
-		label: 'Castles',
+		label: 'Castelo',
 		icon: GiCastle,
-		description: 'This property is an ancient castle!'
+		description: 'Esta propriedade é um castelo antigo!'
 	},
 	{
-		label: 'Caves',
+		label: 'Caverna',
 		icon: GiCaveEntrance,
-		description: 'This property is in a spooky cave!'
+		description: 'Esta propriedade fica em uma caverna!'
 	},
 	{
 		label: 'Camping',
 		icon: GiForestCamp,
-		description: 'This property offers camping activities!'
+		description: 'Esta propriedade oferece atividades de camping!'
 	},
 	{
-		label: 'Arctic',
+		label: 'Artico',
 		icon: BsSnow,
-		description: 'This property is in arctic environment!'
+		description: 'Esta propriedade está em ambiente ártico!'
 	},
 	{
-		label: 'Desert',
+		label: 'Deserto',
 		icon: GiCactus,
-		description: 'This property is in the desert!'
+		description: 'Esta propriedade fica no deserto!'
 	},
 	{
-		label: 'Barns',
+		label: 'Celeiro',
 		icon: GiBarn,
-		description: 'This property is in a barn!'
+		description: 'Esta propriedade fica em um celeiro!'
 	},
 	{
-		label: 'Lux',
+		label: 'Luxuosa',
 		icon: IoDiamond,
-		description: 'This property is brand new and luxurious!'
+		description: 'Esta propriedade é nova e luxuosa!'
 	}
 ];
 
