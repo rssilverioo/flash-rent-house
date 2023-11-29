@@ -19,6 +19,7 @@ import toast from 'react-hot-toast';
 import Button from '../Button';
 import { signIn } from 'next-auth/react';
 import useLoginModal from '@/app/hooks/useLoginModal';
+import { FaFacebook } from 'react-icons/fa';
 
 
 const RegisterModal = () => {
@@ -112,9 +113,9 @@ const RegisterModal = () => {
 			/>
 			<Button
 				outline
-				label='Continue com Github'
-				icon={AiFillGithub}
-				onClick={() => signIn('github')}
+				label='Continue com Facebook'
+				icon={FaFacebook}
+				onClick={() => signIn('facebook')}
 			/>
 			<div className=' text-neutral-500 text-center mt-4 font-light '>
 				<div className='justify-center flex flex-row items-center gap-2'>
