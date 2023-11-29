@@ -86,7 +86,7 @@ const LoginModal = () => {
 			<Input
 				id='password'
 				type='password'
-				label='Password'
+				label='Senha'
 				disabled={isLoading}
 				register={register}
 				errors={errors}
@@ -102,13 +102,13 @@ const LoginModal = () => {
 			<hr />
 			<Button
 				outline
-				label='Continue with Google'
+				label='Continuar com Google'
 				icon={FcGoogle}
 				onClick={() => signIn('google')}
 			/>
 			<Button
 				outline
-				label='Continue with Github'
+				label='Continuar com Github'
 				icon={AiFillGithub}
 				onClick={() => signIn('github')}
 			/>

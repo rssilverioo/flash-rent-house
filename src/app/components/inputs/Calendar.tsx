@@ -5,6 +5,9 @@ import {
 	Range,
 	RangeKeyDict
 } from 'react-date-range';
+import { ptBR } from 'date-fns/locale'
+
+
 
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
@@ -24,6 +27,7 @@ const Calendar: React.FC<CalendarProps> = ({
 	return (
 		<div>
 			<DateRange
+				locale={ptBR}
 				rangeColors={['#262626']}
 				ranges={[value]}
 				date={new Date()}
