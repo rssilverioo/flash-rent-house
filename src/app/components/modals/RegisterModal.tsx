@@ -126,10 +126,10 @@ const RegisterModal = () => {
 			<div className=' text-neutral-500 text-center mt-4 font-light '>
 				<div className='justify-center flex flex-row items-center gap-2'>
 					<div>
-						Already have an account?
+						Ja possui uma conta?
 					</div>
 					<div onClick={toggle} className='text-neutral-800 cursor-pointer hover:underline'>
-						Log in
+						Entre
 					</div>
 				</div>
 			</div>
@@ -140,7 +140,7 @@ const RegisterModal = () => {
 		<Modal
 			disabled={isLoading}
 			isOpen={registerModal.isOpen}
-			title='Register'
+			title='Registrar'
 			actionLabel='Continue'
 			onClose={registerModal.onClose}
 			onSubmit={handleSubmit(onSubmit)}
