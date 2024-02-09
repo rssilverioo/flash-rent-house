@@ -17,9 +17,9 @@ const Logo = () => {
 		<Image
 			onClick={onBack}
 			alt="logo"
-			className='hidden md:block cursor-pointer'
+			className='hidden md:block cursor-pointer hover:opacity-80 transition'
 			height='70'
-			width='51'
+			width='150'
 			src={logo}
 
 		/>

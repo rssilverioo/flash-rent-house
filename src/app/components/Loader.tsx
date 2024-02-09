@@ -1,6 +1,6 @@
 'use client';
 
-import { PuffLoader } from 'react-spinners';
+import { BeatLoader} from 'react-spinners';
 
 const Loader = () => {
 	return (
@@ -13,9 +13,9 @@ const Loader = () => {
       items-center
     "
 		>
-			<PuffLoader
+			<BeatLoader
 				size={100}
-				color="blue"
+				color="#32AE5D"
 			/>
 		</div>
 	);
