@@ -27,9 +27,6 @@ export async function POST(
 		return NextResponse.error();
 	}
 
-
-
-
 	const listingAndReservation = await prisma.listing.update({
 		where: {
 			id: listingId,
