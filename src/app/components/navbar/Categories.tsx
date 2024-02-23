@@ -4,99 +4,67 @@
 import Container from '../Container';
 import { TbBeach, TbMountain, TbPool } from 'react-icons/tb';
 import {
-	GiBarn,
-	GiBoatFishing,
-	GiCactus,
-	GiCastle,
-	GiCaveEntrance,
-	GiForestCamp,
-	GiIsland,
-	GiWindmill
+	GiPlantsAndAnimals,
+	GiCorn,
+	GiFarmTractor,
+	GiCow,
+	GiChicken,
+	GiPineapple,
+	GiBerryBush
 } from 'react-icons/gi';
-import { FaSkiing } from 'react-icons/fa';
-import { BsSnow } from 'react-icons/bs';
-import { IoDiamond } from 'react-icons/io5';
-import { MdOutlineVilla } from 'react-icons/md';
 import CategoryBox from '../CategoryBox';
 import { usePathname, useSearchParams } from 'next/navigation';
+import { LuWheat } from "react-icons/lu";
+import { TbVaccine } from "react-icons/tb";
 
 
 export const categories = [
 	{
-		label: 'Praia',
-		icon: TbBeach,
-		description: 'Este imóvel fica perto da praia!',
+		label: 'Animal',
+		icon: GiPlantsAndAnimals,
+		description: 'Esse produtor vende esse produto!',
 	},
 	{
-		label: 'Moinhos de vento',
-		icon: GiWindmill,
-		description: 'Esta propriedade tem moinhos de vento!',
+		label: 'Milho',
+		icon: GiCorn,
+		description: 'Esse produtor vende esse produto!',
 	},
 	{
-		label: 'Moderna',
-		icon: MdOutlineVilla,
-		description: 'Esta propriedade é moderna!'
+		label: 'Trigo',
+		icon: LuWheat,
+		description: 'Esse produtor vende esse produto!',
 	},
 	{
-		label: 'Campo',
-		icon: TbMountain,
-		description: 'Esta propriedade fica no campo!'
+		label: 'Maquinario',
+		icon: GiFarmTractor,
+		description: 'Esse produtor vende esse produto!',
 	},
 	{
-		label: 'Piscina',
-		icon: TbPool,
-		description: 'Esta propriedade tem uma bela piscina!'
+		label: 'Vaca',
+		icon: GiCow ,
+		description: 'Esse produtor vende esse produto!',
 	},
 	{
-		label: 'Ilha',
-		icon: GiIsland,
-		description: 'Esta propriedade fica em uma ilha!'
+		label: 'Avícola',
+		icon: GiChicken ,
+		description: 'Esse produtor vende esse produto!',
 	},
 	{
-		label: 'Lago',
-		icon: GiBoatFishing,
-		description: 'Esta propriedade fica perto de um lago!'
+		label: 'Frutas',
+		icon: GiPineapple,
+		description: 'Esse produtor vende esse produto!',
 	},
 	{
-		label: 'Esqui',
-		icon: FaSkiing,
-		description: 'Esta propriedade oferece atividades de esqui!'
+		label: 'Gramas',
+		icon: GiBerryBush,
+		description: 'Esse produtor vende esse produto!',
 	},
 	{
-		label: 'Castelo',
-		icon: GiCastle,
-		description: 'Esta propriedade é um castelo antigo!'
+		label: 'Vacinas',
+		icon: TbVaccine,
+		description: 'Esse produtor vende esse produto!',
 	},
-	{
-		label: 'Caverna',
-		icon: GiCaveEntrance,
-		description: 'Esta propriedade fica em uma caverna!'
-	},
-	{
-		label: 'Camping',
-		icon: GiForestCamp,
-		description: 'Esta propriedade oferece atividades de camping!'
-	},
-	{
-		label: 'Artico',
-		icon: BsSnow,
-		description: 'Esta propriedade está em ambiente ártico!'
-	},
-	{
-		label: 'Deserto',
-		icon: GiCactus,
-		description: 'Esta propriedade fica no deserto!'
-	},
-	{
-		label: 'Celeiro',
-		icon: GiBarn,
-		description: 'Esta propriedade fica em um celeiro!'
-	},
-	{
-		label: 'Luxuosa',
-		icon: IoDiamond,
-		description: 'Esta propriedade é nova e luxuosa!'
-	}
+
 ];
 
 

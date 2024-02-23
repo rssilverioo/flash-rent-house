@@ -67,6 +67,7 @@ const Search = () => {
         hover:shadow-md
         transition
         cursor-pointer
+				border-neutral-200
       "
 		>
 			<div
@@ -95,6 +96,7 @@ const Search = () => {
             px-6
             border-x-[1px]
             flex-1
+						border-neutral-200
             text-center
           "
 				>

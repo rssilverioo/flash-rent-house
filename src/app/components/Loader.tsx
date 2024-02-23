@@ -14,7 +14,7 @@ const Loader = () => {
     "
 		>
 			<BeatLoader
-				size={100}
+				size={40}
 				color="#32AE5D"
 			/>
 		</div>

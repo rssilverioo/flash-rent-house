@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Nunito } from 'next/font/google';
+import { Nunito, Poppins } from 'next/font/google';
 import './globals.css';
 import Navbar from './components/navbar/Navbar';
 import ClientOnly from './components/ClientOnly';
@@ -10,11 +10,14 @@ import getCurrentUser from './actions/getCurrentUser';
 import RentModal from './components/modals/RentModal';
 import SearchModal from './components/modals/SearchModal';
 
-const font = Nunito({ subsets: ['latin'] });
+const font = Poppins({
+	subsets: ['latin'],
+	weight: ['100','200','300', '400', '500', '600', '700', '800', '900']
+});
 
 export const metadata: Metadata = {
-	title: 'Flash',
-	description: 'Flash',
+	title: 'Igrib',
+	description: 'Igrib',
 };
 
 export default async function RootLayout({

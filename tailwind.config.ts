@@ -15,8 +15,7 @@ const config: Config = {
 			},
 		},
 		colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
+      'transparent': 'transparent',
       'white': '#ffffff',
 			'black': '#000000',
       'purple': '#3f3cbb',
@@ -34,10 +33,8 @@ const config: Config = {
 			'neutral-500': '#78716c',
 			'neutral-400': '#a3a3a3',
 			'neutral-300': '#d4d4d4',
-
 			'neutral-200': '#e5e5e5',
 			'neutral-100': '#f5f5f5',
-
     },
 	},
 	plugins: [],
